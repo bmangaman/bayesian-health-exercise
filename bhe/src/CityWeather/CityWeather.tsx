@@ -1,6 +1,7 @@
 import React from 'react';
 import './CityWeather.scss';
 import ApiService, { City, HistoricalWeather, Weather } from '../api.service';
+import HistoricGraph from './HistoricGraph/HistoricGraph';
 
 export interface CityWeatherProps {
   city: City;
@@ -47,7 +48,9 @@ class CityWeather extends React.Component<CityWeatherProps, CityWeatherState> {
             </table>
           </div>
         </div>
-        <div className="city-weather__historical"></div>
+        <div className="city-weather__historical">
+          <HistoricGraph weather={this.state.historic} />
+        </div>
       </div>
     );
   }
