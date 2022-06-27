@@ -1,0 +1,21 @@
+.city-weather {
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 16px;
+
+  & + * {
+    margin-top: 16px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__name {
+    margin: 0 0 8px 0;
+  }
+
+  &__historical {
+    flex: 1
+  }
+}
