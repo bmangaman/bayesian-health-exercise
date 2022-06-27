@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  padding: 24px 0;
+
+  h1 {
+    flex: 1;
+    margin: 0;
+  }
+
+  button {
+    background: none;
+    border: 1px solid blue;
+    border-radius: 2px;
+    display: block;
+    padding: 8px;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 24px;
+}
